@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script>
+ function select()
+ {
+ var x = document.getElementById("list").value;
+ if (x=='TV')
+ {
+ document.getElementById("mydiv").innerHTML = "Sony</br> LG </br> Samsung";
+ }
+ else if(x=='Mobile')
+ {
+ document.getElementById("mydiv").innerHTML = "mi</br> Nokia</br> vivo";
+ }
+ else if(x=='Laptop')
+ {
+ document.getElementById("mydiv").innerHTML = "Dell</br> HP </br> acer";
+ }
+ }
+ </script>
+</head>
+<body>
+ 
+ <select name="List" id="list" onchange="select()">
+ <option value="select" >--Select--</option>
+ <option value="TV" id=" tv" >TV</option>
+ <option value="Mobile">Mobile</option>
+ <option value="Laptop">Laptop</option>
+ </select>
+ 
+ <div id="mydiv"></div>
+ 
+</body>
+
+
+
